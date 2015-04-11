@@ -11,7 +11,7 @@ public class Ex2Data {
 	/**
 	 * Contrutor da Class
 	 */
-	public void Ex2Cal(){
+	public Ex2Data(){
 		erro=false;
 	}	
 	/**
