@@ -6,12 +6,22 @@ public class TestDriver {
 
 	System.out.println("Ativdade 2 ");	
 	Ex2Data d =new Ex2Data();
-	d.setAno(2000);
+	d.setAno(2004);
 	d.setDia(12);
 	d.setMes(05);
-	d.dataCompleta();
-	d.setMes(13);//Testar Erro
-	d.dataCompleta();
+	d.dataCompleta();//ok
+	d.setMes(13);
+	d.dataCompleta();//Erro mez
+	d.setMes(2);
+	d.setDia(29);
+	d.dataCompleta();//Ano bixeto
+	d.setMes(4);
+	d.dataCompleta();//ok
+	d.setAno(2005);
+	d.setMes(2);
+	d.dataCompleta();//Erro nao é bixeto
+	d.setDia(28);
+	d.dataCompleta();//ok
 	System.out.println(" ");
 	//Ativdade 3
 	System.out.println("Ativdade 3 ");
@@ -24,6 +34,9 @@ public class TestDriver {
 	System.out.println("Ativdade 4 ");
 	Ex4Moeda.conv(3, 50, 2, 3.5);
 	System.out.println(" ");
+	//Atividade 5
+	System.out.println("Ativdade 5 ");
+	Ex5DataStatc.dataNow();
 	}
 
 }
