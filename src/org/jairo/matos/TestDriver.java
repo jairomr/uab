@@ -37,6 +37,12 @@ public class TestDriver {
 	//Atividade 5
 	System.out.println("Ativdade 5 ");
 	Ex5DataStatc.dataNow();
+	System.out.println(" ");
+	//Atividade 6
+	System.out.println("Ativdade 6 ");
+	Ex6Pessoas p = new Ex6Pessoas("Jairo", "Matos", 29029029, 34382420);
+	System.out.println(p.getNome()+" "+p.getSobrenome()+" | "+p.getCpf()+" | "+p.getRg());
+	System.out.println(" ");
 	}
 
 }
