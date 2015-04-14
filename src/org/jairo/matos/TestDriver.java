@@ -43,6 +43,22 @@ public class TestDriver {
 	Ex6Pessoas p = new Ex6Pessoas("Jairo", "Matos", 29029029, 34382420);
 	System.out.println(p.getNome()+" "+p.getSobrenome()+" | "+p.getCpf()+" | "+p.getRg());
 	System.out.println(" ");
+	//Atividade 7
+	System.out.println("Ativdade 7 ");
+	Ex7 e7 = new Ex7();
+	e7.fator(10);
+	System.out.println(e7.resutFator()+" resutado em M "+e7.getLado()+"o lado em cm "+e7.area()+" area em m "+e7.perimetro()+" o perimeto em metro");	
+	System.out.println(" ");
+	//Atividade 8
+	System.out.println("Ativdade 8 ");
+	System.out.println("Soma int "+Ex8.soma(2,2));
+	System.out.println("Soma double "+Ex8.soma(2.2,2.2));
+	System.out.println(" ");
+	//Atividade 9
+	System.out.println("Ativdade 9 ");
+	Ex9 e9 = new Ex9();
+	e9.info();
+	Ex9 w9 = new Ex9("Jairo","Matos", 34382420);
+	w9.info();
 	}
-
 }

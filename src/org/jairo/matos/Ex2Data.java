@@ -81,10 +81,10 @@ public class Ex2Data {
 		}
 		//Impede dia mes e ano que nao se emcaixa seja emprimido
 		if(a||d||m){erro=true;}else{
-			if(mes%2==0&&dia<=30&&mes!=2){erro=false;}else{
+			if(mes==4||mes==6||mes==9||mes==11&&dia<=30){erro=false;}else{
 				if(ano%4==0&&mes==2&&dia<=29){erro=false;}else{
 					if(mes==2&&dia<=28){erro=false;}else{
-						if(mes%2!=0&&dia<=31){erro=false;}
+						if(mes==1||mes==3||mes==5||mes==7||mes==8||mes==10||mes==12&&dia<=31){erro=false;}
 						else{erro=true;//Não precisa do ele mais ele ta aki para evitar um bug :)
 						}}}}}//Chaves do else
 		
