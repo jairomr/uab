@@ -1,30 +1,35 @@
 package org.jairo.matos;
 
 public class Ex10 {
-	private String nome;
-	private String sobre;
-	private int cpf;
+	private String placa;
+	private int kmrodado;
+	private int ano;
 	public Ex10(){
-		nome="SemNome";
-		sobre="SemSobrenome";
-		cpf=123456789;
+		placa="Não Iformado";
+		kmrodado=0;
+		ano=2000;
 	}
-	public String getNome(){
-		return nome;
+	public Ex10(String p,int k,int a){
+		placa=p;
+		kmrodado=k;
+		ano=a;
 	}
-	public void setNome(String n){
-		nome=n;
+	public String getPacla(){
+		return placa;
 	}
-	public String getSobre(){
-		return sobre;
+	public void setPlaca(String p){
+		placa=p;
 	}
-	public void setSobre(String s){
-		sobre=s;
+	public int getKmRodado(){
+		return kmrodado;
 	}
-	public int getCpf(){
-		return cpf;
+	public void setKmRodado(int k){
+		kmrodado=k;
 	}
-	public void setCpf(int c){
-		cpf=c;
+	public int getAno(){
+		return ano;
+	}
+	public void setAno(int a){
+		ano=a;
 	}
 }

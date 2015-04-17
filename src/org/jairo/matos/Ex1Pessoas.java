@@ -8,12 +8,17 @@ public class Ex1Pessoas {
 	private int diaNas;
 	private int mesNas;
 	private int anoNas;
-	
+	 /**
+	  * Contrutor da class
+	  */
 	public Ex1Pessoas(){
 		nome="Sem nomer";
 		sobrenome="Sem nome";
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getNome(){
 		return nome;
 	}
@@ -47,6 +52,9 @@ public class Ex1Pessoas {
 	}
 	public void setAnoNas(int x){
 		anoNas=x;
+	}
+	public void info(){
+		System.out.println(nome+" "+sobrenome+" "+diaNas+"/"+mesNas+"/"+anoNas);
 	}
 	
 	

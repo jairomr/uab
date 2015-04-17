@@ -8,7 +8,7 @@ public class Ex7 {
 	}
 	/**
 	 * Retorne o lado
-	 * @return retorne o lado sem mudar
+	 * @return retorne o lado sem o fator
 	 */
 	public int getLado(){
 		return lado;

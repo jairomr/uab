@@ -3,7 +3,14 @@ package org.jairo.matos;
 public class TestDriver {
 
 	public static void main(String[] args) {
-
+	System.out.println("Ativdade 1 ");
+	Ex1Pessoas jairo = new Ex1Pessoas();
+	jairo.setNome("Jairo");
+	jairo.setSobrenome("Maots");
+	jairo.setDiaNas(8);
+	jairo.setMesNas(4);
+	jairo.setAnoNas(1994);
+	jairo.info();
 	System.out.println("Ativdade 2 ");	
 	Ex2Data d =new Ex2Data();
 	d.setAno(2004);
@@ -25,10 +32,11 @@ public class TestDriver {
 	System.out.println(" ");
 	//Ativdade 3
 	System.out.println("Ativdade 3 ");
-	System.out.println(Ex3Cal.soma(2,2));
+	System.out.println(Ex3Cal.soma(1,2));
 	System.out.println(Ex3Cal.mult(2,2));
 	System.out.println(Ex3Cal.sub(2,2));
 	System.out.println(Ex3Cal.div(2,2));
+	System.out.println(Ex3Cal.pot(2, 3));
 	System.out.println(" ");
 	//Atividade 4
 	System.out.println("Ativdade 4 ");

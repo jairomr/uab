@@ -1,6 +1,12 @@
 package org.jairo.matos;
 
 public class Ex3Cal {
+	/**
+	 * Metodo de somar
+	 * @param a recebe um valor inteiro
+	 * @param b recebe um valor inteiro
+	 * @return retorna a soma de a mais b
+	 */
 	public static int soma(int a,int b){
 		return a+b;
 	}
@@ -14,7 +20,7 @@ public class Ex3Cal {
 		return a-b;
 	}
 	public static int pot(int a, int b){
-		return a^b;
+		return (int) Math.pow(a,b);
 	}
 
 }

@@ -58,7 +58,7 @@ public class Ex2Data {
 	/**
 	 * Metodo de selecionar o ano
 	 * @param x recebe o dia para passar para variavel ano
-	 */
+	 */ 
 	public void setAno(int x){
 		if(x>0){a=false;ano=x;}
 		else{a=true;
@@ -73,12 +73,12 @@ public class Ex2Data {
 		Date dt = new Date();
 		SimpleDateFormat sdf= new SimpleDateFormat("dd/MM/yyyy");//Escolar o formato da data
 		//Prepara a data para imprimir
-		try {
-			dt = sdf.parse(dataComp);
-		} catch (ParseException e) {
-			
-			e.printStackTrace();
-		}
+			try {
+				dt = sdf.parse(dataComp);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		//Impede dia mes e ano que nao se emcaixa seja emprimido
 		if(a||d||m){erro=true;}else{
 			if(mes==4||mes==6||mes==9||mes==11&&dia<=30){erro=false;}else{
